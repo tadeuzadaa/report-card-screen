@@ -186,6 +186,44 @@ button:focus, select:focus {
   outline-offset: 2px;
 }
 
+.modal-overlay { /* Garante que o modal não ultrapasse a largura da tela */
+  max-width: 100vh; 
+  border-radius: 15px;
+  position: fixed;      /* Fixa o modal em relação à tela */
+  top: 50%;             /* Move para 50% da altura da tela */
+  left: 50%;            /* Move para 50% da largura da tela */
+  transform: translate(-50%, -50%); /* Centraliza exatamente */
+  z-index: 1000;        /* Garante que fique acima de outros elementos */
+  background: #fff;
+  padding: 2rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+
+.form-notas {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 300px;
+  margin: 24px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  background-color: #f9f9f9;
+}
+
+.form-notas label {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+}
+
+.form-notas input,
+.form-notas select,
+.form-notas button {
+  padding: 8px;
+  font-size: 16px;
+}
+
 /* Responsividade */
 @media (max-width: 768px) {
   header {
