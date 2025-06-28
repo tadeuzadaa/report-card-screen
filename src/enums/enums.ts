@@ -1,11 +1,12 @@
-export enum SubjectEnum {
+export enum ESubject {
   Sub1 = 'BDI',
   Sub2 = 'ISL',
   Sub3 = 'FTC',
-  Sub4 = 'GOV-TI'
+  Sub4 = 'GOV-TI',
+  Sub5 = '',
 }
 
-export enum Grades {
+export enum EGrades {
   allocated = 'Allocated',
   grade = 'Grade',
 }

@@ -198,6 +198,20 @@ button:focus, select:focus {
   padding: 2rem;
   box-shadow: 0 2px 8px rgba(0,0,0,0.3);
 }
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+  .modal-header button {
+    background: none;
+    border: none;
+    box-shadow: none;
+    font-size: 1.5rem;
+    color: var(--primary);
+    cursor: pointer;
+  }
 
 .form-notas {
   display: flex;
@@ -217,12 +231,21 @@ button:focus, select:focus {
   font-weight: bold;
 }
 
-.form-notas input,
-.form-notas select,
-.form-notas button {
+.form-notas input {
   padding: 8px;
   font-size: 16px;
+  border: 1px solid var(--primary);
+  border-radius: 8px;
+  color: var(--primary);
+
 }
+
+.form-notas select,
+.form-notas button {
+  padding: 10px;
+  font-size: 16px;
+}
+
 
 /* Responsividade */
 @media (max-width: 768px) {
