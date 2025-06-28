@@ -1,3 +1,5 @@
+import { ESubject } from "./enums";
+
 export type TGrade ={
     allocated: number;
     grade: number;
@@ -6,3 +8,9 @@ export type TGrade ={
     needed: number;
     safe: number;
 }
+
+export type CardProps = {
+  subject: ESubject;
+  allocated: number;
+  grade: number;
+};

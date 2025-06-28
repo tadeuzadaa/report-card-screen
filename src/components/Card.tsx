@@ -1,64 +1,28 @@
 import '../App.tsx';
-import { SubjectEnum } from '../enums/enums';
+import { CardProps } from '../enums/types';
 
-function Card(){
-    return (
-        <><div className="card"> {/* subject 1 */}
-            <h3 className="card-title">{SubjectEnum.Sub1}</h3>
-            <hr />
-            <div className="card-grid">
-                <span className="category">Allocated</span>
-                <span className="category">Grade</span>
-                <span className="category-lost">Lost</span>
-                <span className="category-missing">Missing</span>
-                <span className="category-needed">Needed</span>
-                <span className="category-safe">Safe</span>
+function Card({ subject, allocated, grade }: CardProps) {
+  return (
+    <div className="card">
+      <h3 className="card-title">{subject}</h3>
+      <hr />
+      <div className="card-grid">
+        <span className="category">Allocated</span>
+        <span className="category">Grade</span>
+        <span className="category-lost">Lost</span>
+        <span className="category-missing">Missing</span>
+        <span className="category-needed">Needed</span>
+        <span className="category-safe">Safe</span>
 
-                <label>number</label>
-                <label>number</label>
-                <label>number</label>
-                <label>number</label>
-                <label>number</label>
-                <label>number</label>
-            </div>
-        </div><div className="card"> {/* subject 2 */}
-                <h3 className="card-title">{SubjectEnum.Sub2}</h3>
-                <hr />
-                <div className="card-grid">
-                    <span className="category">Allocated</span>
-                    <span className="category">Grade</span>
-                    <span className="category-lost">Lost</span>
-                    <span className="category-missing">Missing</span>
-                    <span className="category-needed">Needed</span>
-                    <span className="category-safe">Safe</span>
-
-                    <label>number</label>
-                    <label>number</label>
-                    <label>number</label>
-                    <label>number</label>
-                    <label>number</label>
-                    <label>number</label>
-                </div>
-            </div><div className="card"> {/* subject 3 */}
-                <h3 className="card-title">{SubjectEnum.Sub3}</h3>
-                <hr />
-                <div className="card-grid">
-                    <span className="category">Allocated</span>
-                    <span className="category">Grade</span>
-                    <span className="category-lost">Lost</span>
-                    <span className="category-missing">Missing</span>
-                    <span className="category-needed">Needed</span>
-                    <span className="category-safe">Safe</span>
-
-                    <label>number</label>
-                    <label>number</label>
-                    <label>number</label>
-                    <label>number</label>
-                    <label>number</label>
-                    <label>number</label>
-                </div>
-            </div></>
-
-    );
+        <label>{allocated}</label>
+        <label>{grade}</label>
+        <label>0</label>
+        <label>0</label>
+        <label>0</label>
+        <label>0</label>
+      </div>
+    </div>
+  );
 }
+
 export default Card;
