@@ -2,6 +2,12 @@ import '../App.tsx';
 import { CardProps } from '../enums/types';
 
 function Card({ subject, allocated, grade }: CardProps) {
+
+  const lost = allocated - grade;
+  const needed = 60 - grade;
+  const missing = 100 - grade;
+  const safe = missing - needed;
+
   return (
     <div className="card">
       <h3 className="card-title">{subject}</h3>
@@ -16,10 +22,10 @@ function Card({ subject, allocated, grade }: CardProps) {
 
         <label>{allocated}</label>
         <label>{grade}</label>
-        <label>0</label>
-        <label>0</label>
-        <label>0</label>
-        <label>0</label>
+        <label>{lost}</label>
+        <label>{missing}</label>
+        <label>{needed}</label>
+        <label>{safe}</label>
       </div>
     </div>
   );

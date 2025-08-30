@@ -1,9 +1,9 @@
 export enum ESubject {
-  Sub1 = 'BDI',
-  Sub2 = 'ISL',
-  Sub3 = 'FTC',
-  Sub4 = 'GOV-TI',
-  Sub5 = '',
+  Sub1 = 'AMBMOV',
+  Sub2 = 'BD II',
+  Sub3 = 'GAP',
+  Sub4 = 'GIC',
+  Sub5 = 'REDES',
 }
 
 export enum EGrades {

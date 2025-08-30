@@ -48,7 +48,7 @@ function Modal({ fecharModal, handlerSubmit }: ModalProps) {
             />
           </label>
 
-          <button type="submit">Salvar</button>
+          <button type="submit" onClick={handleFormSubmit}>Salvar</button>
         </form>
         <button onClick={fecharModal}>Fechar</button>
       </div>
